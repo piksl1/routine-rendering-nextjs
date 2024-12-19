@@ -1,7 +1,13 @@
+"use client";
+
 import Link from "next/link";
 import NavLink from "./nav-link";
+import { usePathname } from "next/navigation";
 
 const MainHeader = () => {
+
+  const path = usePathname();
+  
   return (
     <header id="main-header">
       <div id="logo">
